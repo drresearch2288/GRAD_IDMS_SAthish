@@ -1,0 +1,6 @@
+# Figure 16 ladder v2: + FG-GAT / EA-SCAF rewiring.
+use_graph: true
+use_domain: false
+use_adv: false
+use_zd_penalty: false
+use_xai: false

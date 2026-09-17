@@ -1,0 +1,17 @@
+train_domain: nsl_kdd
+validation_domain: unsw_nb15
+zero_shot_domains:
+  - ton_iot
+  - bot_iot
+  - cicids2017
+  - apa_ddos
+splits:
+  train_frac: 0.70
+  val_frac: 0.15
+  test_frac: 0.15
+normalizer: zscore
+fit_normalizer_on: nsl_kdd_train
+window: 100
+knn_k: 10
+cosine_tau: 0.4
+parquet_chunk_rows: 8192

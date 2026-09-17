@@ -1,0 +1,15 @@
+epochs: 10
+batch_size: 256
+lr: 0.001
+patience: 10
+optimizer: adam
+betas: [0.9, 0.999]
+grad_clip: 5.0
+adversarial:
+  epsilons: [0.01, 0.03, 0.05]
+  pgd_steps: 7
+  pgd_alpha_ratio: 0.25
+  mix_beta: 0.5
+protocol:
+  unsw_task_loss: false
+  zero_shot_gradients: false

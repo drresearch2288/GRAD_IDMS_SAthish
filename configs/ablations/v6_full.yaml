@@ -1,0 +1,6 @@
+# Figure 16 ladder v6: + X-Rep → full GRAD-IDMS.
+use_graph: true
+use_domain: true
+use_adv: true
+use_zd_penalty: true
+use_xai: true

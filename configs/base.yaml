@@ -1,0 +1,14 @@
+seed: 42
+project_name: grad-idms
+unified_dim: 20
+proj_dim: 64
+device: mps
+float_dtype: float32
+paths:
+  data_raw: data/raw
+  data_interim: data/interim
+  data_processed: data/processed
+  graphs: data/graphs
+  checkpoints: checkpoints
+  results: results
+  logs: results/logs

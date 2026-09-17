@@ -1,0 +1,2 @@
+# Independent ablation B6: no adversarial training. β is always 0.
+use_adv: false

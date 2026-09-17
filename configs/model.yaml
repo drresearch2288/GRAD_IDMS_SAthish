@@ -1,0 +1,27 @@
+phase1:
+  hidden: [128, 64, 32]
+  dropout: 0.3
+  n_classes: 2
+  n_domains: 2
+fg_gat:
+  layers: 2
+  heads: 8
+  hidden: 64
+  dropout: 0.2
+ea_scaf:
+  n_autoencoders: 3
+  hidden_dim: 128
+  latent_dim: 64
+apod_esn:
+  dilation_rates: [1, 2, 3, 4]
+  reservoir_size: 500
+  spectral_radius: 0.9
+phase2:
+  attention_heads: 8
+  n_classes: 5
+loss:
+  focal_gamma: 2.0
+  beta_adv: 0.5
+  gamma_graph_reg: 0.1
+  lambda_schedule: ganin
+  lambda_k: 10.0

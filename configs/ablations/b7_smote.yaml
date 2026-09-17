@@ -1,0 +1,2 @@
+# Independent ablation B7: CE + in-fold SMOTE instead of Fast Focal Loss.
+use_ffl: false

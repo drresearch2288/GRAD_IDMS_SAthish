@@ -1,0 +1,6 @@
+# Figure 16 ladder v5: + MAV-MOA mitigation with zero-delay penalty.
+use_graph: true
+use_domain: true
+use_adv: true
+use_zd_penalty: true
+use_xai: false

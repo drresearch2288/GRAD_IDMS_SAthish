@@ -1,0 +1,3 @@
+# Independent ablation B8: half-width distilled student (Step 2.13).
+compressed: true
+student_checkpoint: results/models/compressed/student.pt

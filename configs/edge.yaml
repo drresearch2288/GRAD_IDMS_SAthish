@@ -1,0 +1,9 @@
+prune_ratio: 0.30
+distill_temperature: 4.0
+student_hidden_scale: 0.50
+quantization: int8
+fake_quant_for_mps: true
+report:
+  params: true
+  flops: true
+  latency_ms: true

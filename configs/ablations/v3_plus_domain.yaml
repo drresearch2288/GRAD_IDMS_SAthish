@@ -1,0 +1,6 @@
+# Figure 16 ladder v3: + domain-adversarial branch.
+use_graph: true
+use_domain: true
+use_adv: false
+use_zd_penalty: false
+use_xai: false

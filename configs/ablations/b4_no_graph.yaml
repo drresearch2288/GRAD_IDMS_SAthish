@@ -1,0 +1,2 @@
+# Independent ablation B4: drop FG-GAT; raw 20-D into EA-SCAF.
+use_graph: false

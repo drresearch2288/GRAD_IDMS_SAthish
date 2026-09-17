@@ -1,0 +1,6 @@
+# Figure 16 ladder v1: Work 1 + Work 2 components only.
+use_graph: false
+use_domain: false
+use_adv: false
+use_zd_penalty: false
+use_xai: false

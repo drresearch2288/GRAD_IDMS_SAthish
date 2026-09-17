@@ -1,0 +1,2 @@
+# Independent ablation B5: source-only. λ is always 0.
+use_domain: false

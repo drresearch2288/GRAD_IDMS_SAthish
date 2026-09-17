@@ -1,0 +1,14 @@
+population: 30
+iterations: 100
+n_nodes: 20
+contraction: 0.85
+weights:
+  f1_source: 0.35
+  f1_zeroshot: 0.25
+  domain_confuse: 0.15
+  robust_acc: 0.15
+  feature_reduction: 0.10
+routing:
+  w_energy: 0.25
+  w_zero_delay: 0.25
+  delay_threshold: 1.0e-6

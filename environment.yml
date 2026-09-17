@@ -1,0 +1,48 @@
+# GRAD-IDMS environment for Apple Silicon (arm64) MacBook Pro M3 Pro.
+# No CUDA. Jupyter is not included — use .py scripts only.
+name: gradidms
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - pandas=2.2
+  - pyarrow
+  - polars
+  - scikit-learn=1.5
+  - imbalanced-learn
+  - xgboost
+  - lightgbm
+  - networkx
+  - matplotlib
+  - seaborn
+  - tqdm
+  - pyyaml
+  - pytest
+  - pytest-cov
+  - ruff
+  - mypy
+  - pip:
+      # torch is installed via pip, not conda, because the conda-forge build may
+      # lag on MPS kernel coverage.
+      # Do NOT install pyg-lib / torch-scatter / torch-sparse compiled extensions.
+      # They have no arm64+MPS wheels. PyTorch Geometric 2.5+ works without them
+      # using its pure-PyTorch fallback path, which is what we want here.
+      - torch>=2.4  # arm64 wheel ships with MPS, no CUDA extras
+      - torchvision
+      - torchaudio
+      - torch-geometric>=2.5
+      - shap>=0.46
+      - captum>=0.7
+      - loguru
+      - hydra-core
+      - omegaconf
+      - rich
+      - onnx
+      - onnxruntime
+      - coremltools
+      - statsmodels
+      - scikit-posthocs
+      - kaggle
